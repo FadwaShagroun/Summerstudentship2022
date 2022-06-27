@@ -1,0 +1,10 @@
+import os 
+path = r'Desktop/Cancer_Archive/manifest-1655980905500/Patients'
+for x in os.listdir(path):
+    if x.startswith("patient"):
+        print(os.path.join(x)) 
+        
+ #other way of loop
+base_path = 'Desktop/Cancer_Archive/manifest-1655980905500/Patients/patient '
+for patient in range(1,3):
+    print(base_path + str(patient))
