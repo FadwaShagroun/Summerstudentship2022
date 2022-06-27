@@ -1,0 +1,5 @@
+import dicom2nifti #import function that converts dicom to nifti file 
+path = '/Users/fadwa/Desktop/Cancer Archive /manifest-1655980905500/Vestibular-Schwannoma-SEG/VS-SEG-001/09-04-1994-NA-Avanto RoutineImage Guidance-88886/2.000000-t1mprtragkv4-70751/' #path of the file that needs to be converted
+path_out_data = '/Users/fadwa/Desktop/Cancer Archive /patient1/' #path of the output
+dicom2nifti.convert_dir.convert_directory(path, path_out_data, compression=True, reorient=True) #applying function to file paths
+ 
