@@ -1,0 +1,6 @@
+import pydicom as dicom
+import matplotlib.pylab as plt
+# specify your image path
+image_path = '/Users/fadwa/Desktop/Cancer_Archive/manifest-1655980905500/Vestibular-Schwannoma-SEG/VS-SEG-001/09-04-1994-NA-Avanto RoutineImage Guidance-88886/NA-94436/1-1.dcm'
+ds = dicom.dcmread(image_path)
+print(ds)
